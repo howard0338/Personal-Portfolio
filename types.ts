@@ -43,4 +43,5 @@ export interface Profile {
   bio: string;
   headshotUrl: string; 
   skills?: string[]; // Added skills field
+  logoUrl?: string; // Added logoUrl field
 }

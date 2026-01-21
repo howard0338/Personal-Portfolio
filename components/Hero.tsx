@@ -4,12 +4,33 @@ import { PROFILE } from '../constants';
 const Hero: React.FC = () => {
   return (
     <section className="space-y-6">
-      <header className="space-y-3 border-b border-gray-100 pb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-          {PROFILE.name}
-        </h1>
-        <div className="text-lg md:text-xl text-gray-500 font-sans font-light tracking-wide">
-          {PROFILE.role} <span className="mx-2 text-gray-300">|</span> {PROFILE.institution}
+      <header className="border-b border-gray-100 pb-8">
+        {/* Adjusted layout: removed justify-between, used justify-start with specific gap to keep logo closer */}
+        <div className="flex flex-row items-center justify-start gap-6 md:gap-10">
+          <div className="space-y-3 flex-1">
+            {/* SEO Keyword Line: Visibly displayed for crawlers and users */}
+            <div className="text-sm md:text-base font-bold tracking-widest text-blue-900/60 uppercase font-sans mb-1">
+              Academic Portfolio | 林世和個人網站
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+              {PROFILE.name}
+            </h1>
+            <div className="text-lg md:text-xl text-gray-500 font-sans font-light tracking-wide">
+              {PROFILE.role} <span className="mx-2 text-gray-300">|</span> {PROFILE.institution}
+            </div>
+          </div>
+          
+          {PROFILE.logoUrl && (
+            <div className="shrink-0">
+                <img 
+                    src={PROFILE.logoUrl} 
+                    alt="Institution Logo" 
+                    // Increased size significantly: h-24 (96px) on mobile, h-32 (128px) on desktop
+                    className="h-24 md:h-32 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                />
+            </div>
+          )}
         </div>
       </header>
 

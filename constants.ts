@@ -25,6 +25,8 @@ export const PROFILE: Profile = {
   // Paste your GitHub Raw Link for your profile photo below.
   headshotUrl: "https://raw.githubusercontent.com/howard0338/Images/ae37165ce79cc32f81b63b2c18ac3c7681de46c5/public/Headshot.jpg", 
 
+  logoUrl: "https://raw.githubusercontent.com/howard0338/Images/4e08dbff637a40d351697cbd97f28c985db61e02/public/NTULogo.png",
+
   bio: "I am a polymer material scientist and engineer specializing in biomedical material design, characterization, and AI-driven solutions. With 4+ years of in vivo experience and 7+ years in synchrotron radiation center, my expertise integrates advanced technologies to create next-generation biomedical solutions.",
   
   skills: [
