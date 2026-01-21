@@ -30,7 +30,7 @@ export const PROFILE: Profile = {
   bio: "I am a polymer material scientist and engineer specializing in biomedical material design, characterization, and AI-driven solutions. With 4+ years of in vivo experience and 7+ years in synchrotron radiation center, my expertise integrates advanced technologies to create next-generation biomedical solutions.",
   
   skills: [
-    "Polymer Material Science",
+    "Polymer Science",
     "Self-healing Hydrogel",
     "Material Design & Development",
     "Synchrotron Tech.",
