@@ -13,7 +13,7 @@ import { Profile, Publication, CoverArt, Award, GalleryPhoto } from './types';
 // ==========================================
 export const PROFILE: Profile = {
   name: "Shih-Ho Lin 林世和",
-  role: "Ph.D. Candidate",
+  role: "Ph.D. Candidate (Graduating Soon)",
   institution: "National Taiwan University",
   email: "f07549022@ntu.edu.tw",
   address: "No. 1, Sec. 4, Roosevelt Rd., Taipei 106319, Taiwan",

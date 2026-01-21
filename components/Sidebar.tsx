@@ -9,8 +9,8 @@ const Sidebar: React.FC = () => {
   return (
     <div className="flex flex-col gap-8 md:pl-4">
       
-      {/* Profile Photo */}
-      <div className="w-full max-w-[200px] md:max-w-full mx-auto md:mx-0">
+      {/* Profile Photo - HIDDEN ON MOBILE (md:block) */}
+      <div className="hidden md:block w-full max-w-[200px] md:max-w-full mx-auto md:mx-0">
         {/* Updated design: Circular (rounded-full) with a white border and shadow for a cleaner, more academic look */}
         <div className="aspect-square w-full bg-white rounded-full overflow-hidden border-[5px] border-white shadow-md ring-1 ring-gray-100">
            {/* 

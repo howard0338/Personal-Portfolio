@@ -23,14 +23,15 @@ const App: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20 items-start">
           
           {/* LEFT COLUMN (Main Content) - Spans 8 columns */}
-          <main className="md:col-span-8 space-y-20 order-2 md:order-1">
+          {/* Removed 'order' classes. Default DOM order places Main first, then Sidebar on mobile stacks. */}
+          <main className="md:col-span-8 space-y-20">
             <Hero />
             <Publications />
             <Awards />
           </main>
 
           {/* RIGHT COLUMN (Sidebar) - Spans 4 columns */}
-          <aside className="md:col-span-4 space-y-8 order-1 md:order-2 sticky top-10">
+          <aside className="md:col-span-4 space-y-8 sticky top-10">
             <Sidebar />
           </aside>
 
